@@ -1,0 +1,13 @@
+runtime: php72
+
+runtime_config:
+  document_root: .
+
+entrypoint:
+  server handler.php
+
+env_variables:
+  CLOUDSQL_USER: root
+  CLOUDSQL_DB: perros
+  CLOUDSQL_PASSWORD:
+  CLOUDSQL_DSN: /cloudsql/sage-striker-335723:us-central1:root
